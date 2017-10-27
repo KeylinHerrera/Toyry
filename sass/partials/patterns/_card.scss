@@ -1,43 +1,38 @@
-.card {
-    height: 200px;
-    width: 200px;
-    background-image: url("../img/back_small.png");
-    display: inline-block;
-    margin: 0 15px 15px 0;
-    line-height: 140px;
-    vertical-align: top;
-    cursor: pointer;
-    transform: rotateY(180deg);
-    transform-style: preserve-3d;
-    transition: transform .3s ease;
-    line-height: 75px;
+.game-table {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+}
 
-    //@include query(600px){
-    //    
+.cards {
+    width: 25%;
+    position: relative;
+    flex: 1 auto;
+    margin: 15px 0;
+
+    //@include query(380px) {
+    //    width: 23%;
+    //}
+
+    //@include query(420px) {
+    //    width: 20%;
     //}
 }
 
-@media only screen and (min-width: 600px)  {
-    .card {
-        height: 150px;
-        width: 150px;
-    }
-}
-
-.back-card,
 .front-card {
-        display: block;
-        position: absolute;
-        z-index: -1;
-        top: 0px;
-        left:0; 
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
 }
 
-.back-card .hidden{
-    display: none;
+.back-card{
+    width: 65%;
 }
 
-.select .back-card{
+.hidden {
     display: none;
 }
 
