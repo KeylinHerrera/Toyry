@@ -1,41 +1,63 @@
 .clearfix:before, .clearfix:after {
   content: " ";
-  display: table; }
+  display: table;
+}
+
 .clearfix:after, .clearfix:after {
-  clear: both; }
+  clear: both;
+}
 
 * {
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+}
 
 body {
-  background-color: #C5EAE6; }
+  background-color: #C5EAE6;
+}
 
 header {
   color: #137875;
   padding: 60px 0;
-  text-align: center; }
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Barrio', cursive;
+  font-size: 9.0rem;
+}
+
+@media only screen and (min-width: 600px) {
   header h1 {
-    font-family: 'Barrio', cursive;
-    font-size: 9.0rem; }
-    @media only screen and (min-width: 600px) {
-      header h1 {
-        font-size: 4.0rem; } }
+    font-size: 4.0rem;
+  }
+}
 
 p,
 button {
   font-family: 'Inconsolata', monospace;
   font-size: 3.8rem;
-  text-transform: uppercase; }
-  @media only screen and (min-width: 600px) {
-    p,
-    button {
-      font-size: 2.0rem; } }
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 600px) {
+  p,
+  button {
+    font-size: 2.0rem;
+  }
+}
+
+img {
+  width: 100%;
+}
 
 .card {
   height: 200px;
@@ -46,10 +68,23 @@ button {
   line-height: 140px;
   vertical-align: top;
   cursor: pointer;
-  transform: rotateY(180deg);
-  transform-style: preserve-3d;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform .3s ease;
+  transition: -webkit-transform .3s ease;
   transition: transform .3s ease;
-  line-height: 75px; }
+  transition: transform .3s ease, -webkit-transform .3s ease;
+  line-height: 75px;
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    height: 150px;
+    width: 150px;
+  }
+}
 
 .back-card,
 .front-card {
@@ -57,13 +92,20 @@ button {
   position: absolute;
   z-index: -1;
   top: 0px;
-  left: 0; }
+  left: 0;
+}
 
-.back-card .normal {
-  display: none; }
+.back-card .hidden {
+  display: none;
+}
 
-.match .back-card {
-  display: none; }
+.select .back-card {
+  display: none;
+}
+
+.match {
+  visibility: hidden !important;
+}
 
 button {
   background-color: #F7931E;
@@ -75,27 +117,34 @@ button {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block; }
+  display: inline-block;
+}
 
 * {
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .full-wrapper {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+}
 
 .container {
-  width: 95%; }
+  width: 95%;
+}
 
 .game-table {
   text-align: center;
-  margin: 60px 0; }
+  margin: 60px 0;
+}
 
 .deck {
-  margin: 80px 0; }
+  margin: 80px 0;
+}
 
 .options-panel {
-  width: 90%; }
+  width: 90%;
+}
 
 .score-panel {
   background-color: #F7931E;
@@ -103,13 +152,17 @@ button {
   color: white;
   margin: 0 auto;
   padding: 1.6rem;
-  width: 94%; }
-  .score-panel p {
-    display: inline-block; }
-  .score-panel span {
-    font-size: 4.4rem; }
+  width: 94%;
+}
+
+.score-panel p {
+  display: inline-block;
+}
+
+.score-panel span {
+  font-size: 4.4rem;
+}
 
 .max-score {
-  float: right; }
-
-/*# sourceMappingURL=style.css.map */
+  float: right;
+}
