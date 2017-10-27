@@ -1,0 +1,20 @@
+.score-panel {
+    background-color: #F7931E;
+    border-radius: 18px;
+    color: white;
+    margin: 0 auto;
+    padding: 1.6rem;
+    width: 94%;
+
+    p {
+        display: inline-block;
+    }
+
+    span {
+        font-size: 4.4rem;
+    }
+}
+
+.max-score {
+    float: right;
+}
