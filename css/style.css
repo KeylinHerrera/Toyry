@@ -1,93 +1,68 @@
 .clearfix:before, .clearfix:after {
   content: " ";
-  display: table;
-}
-
+  display: table; }
 .clearfix:after, .clearfix:after {
-  clear: both;
-}
+  clear: both; }
 
 * {
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
-  background-color: #C5EAE6;
-}
+  background-color: #C5EAE6; }
 
 header {
   color: #137875;
   padding: 60px 0;
-  text-align: center;
-}
-
-header h1 {
-  font-family: 'Barrio', cursive;
-  font-size: 9.0rem;
-}
+  text-align: center; }
+  header h1 {
+    font-family: 'Barrio', cursive;
+    font-size: 4.0rem; }
+  @media only screen and (min-width: 600px) {
+    header h1 {
+      font-size: 7.0rem; } }
 
 p,
 button {
   font-family: 'Inconsolata', monospace;
   font-size: 3.8rem;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 img {
-  width: 100%;
-}
+  width: 100%; }
 
 .game-table {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
   list-style: none;
-  padding: 0;
-}
+  padding: 0; }
 
 .cards {
   width: 25%;
   position: relative;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 auto;
-          flex: 1 auto;
-  margin: 15px 0;
-}
+  flex: 1 auto;
+  margin: 15px 0; }
 
 .front-card {
   text-align: center;
   width: 65%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .back-card {
-  width: 65%;
-}
+  width: 65%; }
 
 .hidden {
-  display: none;
-}
+  display: none; }
 
 .match {
-  visibility: hidden !important;
-}
+  visibility: hidden !important; }
 
 button {
   background-color: #F7931E;
@@ -99,34 +74,27 @@ button {
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-}
+  display: inline-block; }
 
 * {
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .full-wrapper {
   height: 100%;
-  width: 100%;
-}
+  width: 100%; }
 
 .container {
-  width: 95%;
-}
+  width: 95%; }
 
 .game-table {
   text-align: center;
-  margin: 100px 0;
-}
+  margin: 100px 0; }
 
 .deck {
-  margin: 80px 0;
-}
+  margin: 80px 0; }
 
 .options-panel {
-  width: 90%;
-}
+  width: 90%; }
 
 .score-panel {
   background-color: #F7931E;
@@ -134,17 +102,13 @@ button {
   color: white;
   margin: 0 auto;
   padding: 1.6rem;
-  width: 94%;
-}
-
-.score-panel p {
-  display: inline-block;
-}
-
-.score-panel span {
-  font-size: 4.4rem;
-}
+  width: 94%; }
+  .score-panel p {
+    display: inline-block; }
+  .score-panel span {
+    font-size: 4.4rem; }
 
 .max-score {
-  float: right;
-}
+  float: right; }
+
+/*# sourceMappingURL=style.css.map */
