@@ -16,7 +16,7 @@ body {
 
 header {
     color: #137875;
-    padding: 60px 0;
+    padding: 30px 0;
     text-align: center;
     
     h1 {
@@ -26,7 +26,6 @@ header {
         @include query(600px) {
             font-size: 7.0rem;
         }
-
     }
 }
 
