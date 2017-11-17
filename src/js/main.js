@@ -1,4 +1,4 @@
-var toys = ['img/artefacto_small.png, img/artefacto_small.png, img/astronauta_small.png, img/astronauta_small.png, img/bus_small.png, img/bus_small.png, img/muñeca_small.png, img/muñeca_small.png, img/oso_small.png, img/oso_small.png, img/peluche_small.png, img/peluche_small.png, img/perro_small.png, img/perro_small.png, img/robot_small.png, img/robot_small.png, img/soldado_small.png, img/soldado_small.png, img/triciclo_small.png,img/triciclo_small.png']
+var toys = ['img/artefacto_small.png', 'img/artefacto_small.png', 'img/astronauta_small.png', 'img/astronauta_small.png', 'img/bus_small.png', 'img/bus_small.png', 'img/muñeca_small.png', 'img/muñeca_small.png', 'img/oso_small.png', 'img/oso_small.png', 'img/peluche_small.png', 'img/peluche_small.png', 'img/perro_small.png', 'img/perro_small.png', 'img/robot_small.png', 'img/robot_small.png', 'img/soldado_small.png', 'img/soldado_small.png', 'img/triciclo_small.png', 'img/triciclo_small.png']
 var imgs = document.getElementsByClassName('toys')
 
 function shuffle (array) {
