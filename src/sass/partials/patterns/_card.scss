@@ -1,25 +1,10 @@
-/////FLIPPER///
-
-//.flip-container {
-//    perspective: 1000px; //
-//}
-
-.game-table {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    list-style: none;
-    padding: 0;
-}
-
 .cards {
     width: 25%;
     position: relative;
     flex: 1 auto;
     margin: 9px 0;
     perspective: 1000px;
-    padding: 15px;
+    padding: 20px;
     top: 0;
 
     @include query(380px) {
@@ -28,18 +13,32 @@
 
     @include query(450px) {
         width: 21%;
-        padding: 15px;
+        padding: 18px;
+    }
+
+    @include query(500px) {
+        width: 21%;
+        padding: 26px;
     }
 
     @include query(800px) {
-        width: 10%;
+        width: 17%;
+        padding: 32px;
+    }
+
+    @include query(1000px) {
+        padding: 38px;
+    }
+
+    @include query(1200px) {
+        padding: 66px;
     }
 }
 
 .front-card,
 .back-card {
     text-align: center;
-    width: 65%;
+    width: 100%;
     margin: 0 auto;
     backface-visibility: hidden;
     position: absolute;
