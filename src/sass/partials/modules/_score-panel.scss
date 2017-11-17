@@ -17,6 +17,10 @@
             font-size: 3.4rem;
         }
     }
+
+    @include query(1200px) {
+        padding: 0.6rem;
+    }
 }
 
 .max-score {
