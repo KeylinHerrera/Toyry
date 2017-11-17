@@ -1,0 +1,45 @@
+.game-table {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style: none;
+    padding: 0;
+}
+
+.cards {
+    width: 25%;
+    position: relative;
+    flex: 1 auto;
+    margin: 15px 0;
+
+    @include query(380px) {
+        width: 23%;
+    }
+
+    @include query(420px) {
+        width: 21%;
+    }
+
+    @include query(1200px) {
+        width: 10%;
+    }
+}
+
+.front-card {
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.back-card{
+    width: 65%;
+}
+
+.hidden {
+    display: none;
+}
+
+.match{
+    visibility: hidden !important;
+}

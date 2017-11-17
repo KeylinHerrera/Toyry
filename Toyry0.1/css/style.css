@@ -1,0 +1,201 @@
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after, .clearfix:after {
+  clear: both;
+}
+
+* {
+  margin: 0 auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #C5EAE6;
+}
+
+header {
+  color: #137875;
+  padding: 60px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Barrio', cursive;
+  font-size: 4.0rem;
+}
+
+@media only screen and (min-width: 600px) {
+  header h1 {
+    font-size: 7.0rem;
+  }
+}
+
+p,
+button {
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 600px) {
+  p,
+  button {
+    font-size: 2.6rem;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+.game-table {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style: none;
+  padding: 0;
+}
+
+.cards {
+  width: 25%;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 auto;
+          flex: 1 auto;
+  margin: 15px 0;
+}
+
+@media only screen and (min-width: 380px) {
+  .cards {
+    width: 23%;
+  }
+}
+
+@media only screen and (min-width: 420px) {
+  .cards {
+    width: 21%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cards {
+    width: 10%;
+  }
+}
+
+.front-card {
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.back-card {
+  width: 65%;
+}
+
+.hidden {
+  display: none;
+}
+
+.match {
+  visibility: hidden !important;
+}
+
+button {
+  background-color: #F7931E;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  float: right;
+  margin: 0 auto;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+* {
+  margin: 0 auto;
+}
+
+.full-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 95%;
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 70%;
+  }
+}
+
+.game-table {
+  text-align: center;
+  margin: 100px 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .game-table {
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+.deck {
+  margin: 80px 0;
+}
+
+.options-panel {
+  width: 90%;
+}
+
+.score-panel {
+  background-color: #F7931E;
+  border-radius: 18px;
+  color: white;
+  margin: 0 auto;
+  padding: 1.6rem;
+  width: 94%;
+}
+
+.score-panel p {
+  display: inline-block;
+}
+
+.score-panel span {
+  font-size: 2.4rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .score-panel span {
+    font-size: 3.4rem;
+  }
+}
+
+.max-score {
+  float: right;
+}
