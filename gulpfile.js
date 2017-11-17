@@ -102,7 +102,7 @@ gulp.task('watch', function () {
   gulp.watch('src/**/*.html', ['html:dev'])
   gulp.watch('src/**/*.(png|jpe?g|gif)', ['images:dev'])
   gulp.watch('src/js/**/*.js', ['lint', 'js:dev'])
-  gulp.watch('src/sass/**/*', ['styleguide'])
+  //gulp.watch('src/sass/**/*', ['styleguide'])
 })
 
 //
